@@ -1,0 +1,10 @@
+.map {
+    height: 40rem;
+}
+
+#HomeButton {
+    position:absolute;
+    top: 6rem;
+    left: 1.7rem;
+    z-index: 50;
+}
