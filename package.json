@@ -1,0 +1,26 @@
+{
+  "name": "gp487webmap",
+  "version": "1.0.0",
+  "description": "GEOG487 web map assignment",
+  "main": "map.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwaipun/GP487WebMaps.git"
+  },
+  "keywords": [
+    "gp487"
+  ],
+  "author": "Christopher Kwai-Pun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kwaipun/GP487WebMaps/issues"
+  },
+  "homepage": "https://github.com/kwaipun/GP487WebMaps#readme",
+  "dependencies": {
+    "esri-leaflet": "^1.0.2",
+    "request": "^2.69.0"
+  }
+}
