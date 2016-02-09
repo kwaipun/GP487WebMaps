@@ -11,15 +11,22 @@ require([
       arcgisUtils.createMap("91f1688adcc149d79af8813b5f9e914e", "map").then(function (response) {
           map = response.map;
 
-        //   var legend = new Legend({
-        //       map: map,
-        //       layerInfos:(arcgisUtils.getLegendLayers(response))
-        //   }, "legend");
-        //   var home = new HomeButton({map:map},"HomeButton");
+          var layers = response.itemInfo.itemData.operationalLayers;
+          var layerInfo = [];
+          dojo.forEach(layers[0].featureCollection.layers,function(layer){
+              if(!layer.featureCollection){
+                  layerInfo.push({"layer":layer.layerObject,"title":layer.title});
+              }
+          });
+
+          var legendDijit = new esri.dijit.Legend({
+              map:map,
+              layerInfos:layerInfo
+          },"legend");
+          legendDijit.startup();
           var scalebar = new Scalebar({
               map:map,
               scalebarUnit: 'metric',
               attatchTo: 'bottom-left'});
-        //   legend.startup();
       });
   });

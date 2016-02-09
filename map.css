@@ -10,7 +10,8 @@
     opacity: 0.75;
 }
 
-#legend{
+#legend {
+  opacity: 0.85;
   background-color: #fff;
   position: absolute !important;
   z-index: 99;
