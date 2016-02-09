@@ -11,10 +11,11 @@
 }
 
 #legend {
-  opacity: 0.85;
-  background-color: #fff;
-  position: absolute !important;
-  z-index: 99;
-  top:10px;
-  right:20px;
+    width: 15rem;
+    opacity: 0.85;
+    background-color: #fff;
+    position: absolute !important;
+    z-index: 99;
+    top:10px;
+    right:20px;
 }
