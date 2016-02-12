@@ -1,5 +1,8 @@
+/*.body {
+    display: table;
+}*/
 .map {
-    height: 40rem;
+    height: 90vh;
 }
 
 #HomeButton {
